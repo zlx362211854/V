@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<button onclick="change()">change</button>
+<div id="container"></div>
+<script type="text/javascript" src='./v.js'></script>
+<script type="text/javascript">
+
+    var vm = new V({
+        el: '#container',
+        template: '<div>{{name}}: {{age}}</div>',
+        data: {
+            name: 'zlx',
+            age: '16'
+        }
+    });
+    
+    function change() {
+        vm.name = 'hsq';
+        vm.age = '14';
+    }
+
+</script>
+</body>
+</html>
